@@ -6,3 +6,6 @@ Problem: https://adventofcode.com/2023/day/1
 
 Day 2: Cube Conandrum
 Problem: https://adventofcode.com/2023/day/2
+
+Day 3: Gear Ratio
+Problem: https://adventofcode.com/2023/day/3
