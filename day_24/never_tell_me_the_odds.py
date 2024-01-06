@@ -20,8 +20,6 @@ class Hailstone:
 
 class HailstoneTrajectoryAnalyzer:
     def __init__(self, input_content, start_limit=None, end_limit=None, use_sympy=False):
-        # Replace @ with , so that we get sx, sy, sz, vx, vy, vz
-        # convert these number strings to int using map and create hailstone objects with these six values
         if use_sympy:
             self.hailstones = [tuple(map(int, line.replace("@", ",").split(","))) for line in
                                input_content.splitlines()]
