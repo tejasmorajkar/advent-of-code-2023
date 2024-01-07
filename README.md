@@ -10,5 +10,8 @@ Problem: https://adventofcode.com/2023/day/2
 Day 3: Gear Ratio
 Problem: https://adventofcode.com/2023/day/3
 
+Day 4: Scratchcards
+Problem: https://adventofcode.com/2023/day/4
+
 Day 24: Never Tell Me The Odds
 Problem: https://adventofcode.com/2023/day/24
