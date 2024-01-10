@@ -7,12 +7,11 @@ for block in blocks:
         ranges.append(list(map(int, line.split())))
     new_mapping = []
     for val in mapping:
-        for destination, source, range_len in ranges:
-            if source <= val < (source + range_len):
-                new_mapping.append(destination + val - source)
+        for destination_start, source_start, range_len in ranges:
+            if source_start <= val < (source_start + range_len):
+                new_mapping.append(destination_start + val - source_start)
                 break
         else:
             new_mapping.append(val)
     mapping = new_mapping
 print(min(mapping))
-

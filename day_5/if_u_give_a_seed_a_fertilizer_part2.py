@@ -12,11 +12,12 @@ for block in blocks:
     new_mapping = []
     while len(mapping) > 0:
         segment_start, segment_end = mapping.pop()
-        for destination, source, range_len in ranges:
-            overlap_start = max(segment_start, source)
-            overlap_end = min(segment_end, source + range_len)
+        for destination_start, source_start, range_len in ranges:
+            overlap_start = max(segment_start, source_start)
+            overlap_end = min(segment_end, source_start + range_len)
             if overlap_start < overlap_end:
-                new_mapping.append((destination + overlap_start - source, destination + overlap_end - source))
+                new_mapping.append((destination_start + overlap_start - source_start,
+                                    destination_start + overlap_end - source_start))
                 if overlap_start > segment_start:
                     mapping.append((segment_start, overlap_start))
                 if segment_end > overlap_end:
