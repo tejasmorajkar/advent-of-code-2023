@@ -159,8 +159,14 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /day_1/input.txt
+/day_1/test.txt
 /day_2/input.txt
+/day_2/test.txt
 /day_3/input.txt
+/day_3/test.txt
 /day_4/input.txt
+/day_4/test.txt
 /day_5/input.txt
+/day_5/test.txt
 /day_24/input.txt
+/day_24/test.txt
